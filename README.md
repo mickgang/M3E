@@ -1,2 +1,3 @@
-Note: The python.cfg currently links to my PC's python.exe directory.
-Change it to where yours is stored (or use the python.exe inside the msys22 folder. Had problems loading with that on my end so I changed it to the PC's python)
+Has the models and objects from M3E, still missing the additional Suppliers and WaterBottles
+
+Note: The python.cfg currently links to my PC's python.exe directory. Change it to where yours is stored (or use the python.exe inside the msys22 folder. Had problems loading with that on my end so I changed it to the PC's python)
