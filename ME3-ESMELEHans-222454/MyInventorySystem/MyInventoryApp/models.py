@@ -22,13 +22,13 @@ class WaterBottle(models.Model):
     size = models.CharField(max_length=300, default='default')
     mouthsize = models.CharField(max_length=300, default='default')
     color = models.CharField(max_length=300, default='default')
-    suppliedby = models.CharField(max_length=300, default='default')
+    suppliedby = models.ForeignKey(Supplier, on_delete=models.CASCADE,)
     currentquant = models.CharField(max_length=300, default='default')
     
     def __str__(self):
         strreturn = "{}: {}, {}, {}, {}, supplied by {}, PHP {}: {}".format(self.sku,self.brand,self.mouthsize, self.size, self.color,self.suppliedby,self.cost,self.currentquant)
         return strreturn
-# Create your models here.
+# Create your models here. models.ForeignKey(Supplier, on_delete=models.CASCADE,null=True)
     
 #CHECK FOLLOWING (Not yet Implemented directly)
 #Ident of WB by SKU
